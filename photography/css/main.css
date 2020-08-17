@@ -60,6 +60,10 @@ a.nav-link:hover {
     color: #e7bd01 !important;
 }
 
+.navbar-toggler{
+    display: none;
+}
+
 /* services section */
 
 #services {
@@ -89,6 +93,11 @@ a.nav-link:hover {
     height: 50px;
     margin: 0 auto;
     border-radius: 200px;
+}
+
+.item-circle i{
+    font-size: 25px;
+    margin-top: 10px;
 }
 
 .services-content img {
@@ -336,6 +345,10 @@ h4 a:hover {
 
 @media (max-width: 575.98px) { 
 
+    .navbar-toggler{
+        display: inline-block;
+    }
+
     .navbar-collapse {
         background-color: rgba(0,0,0,0.7);}
 
@@ -353,9 +366,17 @@ h4 a:hover {
         margin-bottom: 10px;
     }
 
+    .teamContent{
+        display: block;
+    }
+
 }
 
 @media (min-width: 576px) {
+
+    .navbar-toggler{
+        display: inline-block;
+    }
 
     .navbar-collapse {
         background-color: rgba(0,0,0,0.7);}
@@ -378,13 +399,18 @@ h4 a:hover {
         margin: 50px 0;
         padding-bottom: 0;
     }
+
+    .teamContent{
+        display: block;
+    }
  }
 
  @media (min-width: 768px) { 
 
-    
+    .navbar-toggler{
+        display: inline-block;
+    }
 
-    
     .navbar-light .navbar-toggler {
         border: 2px solid #e7bd01;}
 
@@ -408,7 +434,9 @@ h4 a:hover {
 
 @media (min-width: 992px) { 
 
-    
+    .navbar-toggler{
+        display: inline-block;
+    }
 
     .navbar-light .navbar-toggler {
         border: 2px solid #e7bd01;}
@@ -434,6 +462,11 @@ h4 a:hover {
         padding-left: 9px;
         padding-right: 9px;
     }
+}
+
+.footer-icon i{
+    font-size: 30px;
+    color: #000;
 }
 
 @media (min-width: 1200px) { 
