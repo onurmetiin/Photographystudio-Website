@@ -1,2 +1,7 @@
 # Photographystudio-Website
-Html/Css - Full-responsive Project
+I designed and coded a photograph studio website which i used;
+-Html
+-Css
+-Javascript
+-Jquery
+-Bootstrap4
