@@ -12,6 +12,15 @@ body,
     -o-background-size: cover;
 }
 
+.navbar-brand img{
+    width: 60px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid #e7bd01;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
 .fixed-top {
     max-width: 1366px;
     margin: 10px auto;
@@ -49,7 +58,7 @@ h2 {
 
 a.nav-link {
     font-size: 15px;
-    color: #fff !important;
+    color: rgba(110, 110, 110, 0.9);
     transition: color 0.5s ease;
     -webkit-transition: color 0.5s ease;
     -moz-transition: color 0.5s ease;
@@ -62,6 +71,10 @@ a.nav-link:hover {
 
 .navbar-toggler{
     display: none;
+}
+
+#navbarNav{
+    border-radius: 10px;
 }
 
 /* services section */
@@ -245,12 +258,20 @@ h5 {
     padding-right: 5px;
 }
 
-.socialicon .fas {
+.socialicon i {
     border: 2px solid #000;
     width: 30px;
     height: 30px;
     border-radius: 30px;
     line-height: 26px;
+    transition: all ease 200ms;
+    cursor: pointer;
+}
+
+.socialicon i:hover {
+    color: #e7bd01;
+    border: 2px solid #e7bd01;
+
 }
 
 .row p {
@@ -312,27 +333,42 @@ textarea {
 }
 
 .footer-social {
+    text-align: right;
     list-style-type: none;
     padding: 45px 0;
 }
 
 .footer-icon {
+    text-align: right;
     display: inline;
     padding-left: 9px;
     padding-right: 9px;
 }
 
+.footer-icon a i{
+    font-size: 30px;
+    color: #000;
+    transition: all ease 200ms;
+}
+
+.footer-icon a i:hover{
+    color: #555555;
+}
+
+
 .fixed-top.change-fix-top {
-    margin-top: -23px;
-    margin-bottom: -30px;
-    margin-left: 0;
-    margin-right: 0;
-    background-color: rgb(59, 57, 54)
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e7bd01;
+    border-radius: 15px;
+    background-color: rgba(110, 110, 110, 0.9)
 
 }
 
 h4 a {
     color: #000;
+    transition: all ease 200ms;
+    cursor: pointer;
 }
 
 h4 a:hover {
@@ -345,12 +381,18 @@ h4 a:hover {
 
 @media (max-width: 575.98px) { 
 
+    #cover {
+        background: url('../image/mainBgg.jpg') no-repeat center center fixed;
+        background-size: cover;}
+        
     .navbar-toggler{
         display: inline-block;
     }
 
     .navbar-collapse {
-        background-color: rgba(0,0,0,0.7);}
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 2px solid #e7bd01;
+    }
 
     .navbar-light .navbar-toggler {
         border: 2px solid #e7bd01;}
@@ -379,7 +421,9 @@ h4 a:hover {
     }
 
     .navbar-collapse {
-        background-color: rgba(0,0,0,0.7);}
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 2px solid #e7bd01;
+    }
 
     .navbar-light .navbar-toggler {
         border: 2px solid #e7bd01;}
@@ -456,19 +500,12 @@ h4 a:hover {
         line-height:30px;
         color: #555555;
     }
-    
-    
+
     .footer-icon {
         padding-left: 9px;
         padding-right: 9px;
     }
 }
-
-.footer-icon i{
-    font-size: 30px;
-    color: #000;
-}
-
 @media (min-width: 1200px) { 
 
     h1 {
